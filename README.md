@@ -39,8 +39,21 @@
 
 ###
 
+<div align="center">
+  <img src="./metrics.plugin.achievements.svg" alt="Achievements" />
+</div>
+
+###
+
+<div align="center">
+  <img src="./metrics.plugin.leetcode.svg" alt="LeetCode stats" />
+</div>
+
+###
+
 <br clear="both">
 
 <img src="https://raw.githubusercontent.com/anikevichk/anikevichk/output/snake.svg" alt="Snake animation" />
 
-###
+
+

@@ -1,0 +1,39 @@
+# .github/workflows/metrics.yml
+name: Metrics
+
+on:
+  schedule:
+    - cron: "0 6 * * *"
+  workflow_dispatch:
+
+jobs:
+  github-metrics:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Achievements
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics.plugin.achievements.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: anikevichk
+          base: ""
+          plugin_achievements: yes
+          plugin_achievements_display: compact
+          plugin_achievements_threshold: C
+          plugin_achievements_limit: 8
+
+      - name: LeetCode
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics.plugin.leetcode.svg
+          token: NOT_NEEDED
+          user: anikevichk
+          base: ""
+          plugin_leetcode: yes
+          plugin_leetcode_user: anikevichk
+          plugin_leetcode_sections: solved, skills, recent
+          plugin_leetcode_limit_skills: 8
+          plugin_leetcode_limit_recent: 2

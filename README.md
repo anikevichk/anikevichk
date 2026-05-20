@@ -44,12 +44,6 @@
 
 ###
 
-<div align="center">
-  <img src="./metrics.plugin.achievements.svg" alt="GitHub achievements" />
-</div>
-
-###
-
 <br clear="both">
 
 <img src="https://raw.githubusercontent.com/anikevichk/anikevichk/output/snake.svg" alt="Snake animation" />
